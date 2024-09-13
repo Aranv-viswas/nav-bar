@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibit Navigation</title>
+    <style>
+        /* Basic styles for the navigation menu */
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav aria-label="Main Navigation">
+        <ul role="menu">
+            <li role="menuitem"><a href="#home">Home</a></li>
+            <li role="menuitem"><a href="#exhibit-1">Exhibit 1</a></li>
+            <li role="menuitem"><a href="#exhibit-2">Exhibit 2</a></li>
+            <li role="menuitem"><a href="#exhibit-3">Exhibit 3</a></li>
+            <li role="menuitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to the Exhibit</h1>
+        <p>This is the home section.</p>
+    </section>
+
+    <section id="exhibit-1">
+        <h1>Exhibit 1</h1>
+        <p>This is the first exhibit.</p>
+    </section>
+
+    <section id="exhibit-2">
+        <h1>Exhibit 2</h1>
+        <p>This is the second exhibit.</p>
+    </section>
+
+    <section id="exhibit-3">
+        <h1>Exhibit 3</h1>
+        <p>This is the third exhibit.</p>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Get in touch for more information.</p>
+    </section>
+
+</body>
+</html>
